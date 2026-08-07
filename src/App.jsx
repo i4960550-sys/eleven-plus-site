@@ -82,10 +82,6 @@ const FAQS = [
     a: "Every paper is a printable PDF, laid out to match real exam papers, with a separate answer booklet and full mark scheme.",
   },
   {
-    q: "Why two papers per set?",
-    a: "That's the format the Slough Consortium is moving to for the September 2027 exam, when Quest Assessments becomes the exam provider: Paper 1 covers English and Verbal Reasoning, Paper 2 covers Non-Verbal Reasoning and Maths. Each set mirrors that exactly.",
-  },
-  {
     q: "How quickly will I get access?",
     a: "Instantly. After checkout you'll get a download link by email, and the papers stay available in your account.",
   },
