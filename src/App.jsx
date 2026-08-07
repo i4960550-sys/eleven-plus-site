@@ -92,7 +92,7 @@ const FAQS = [
 ];
 
 function money(n) {
-  return `£${n.toFixed(2)}`;
+  return `£${Number.isInteger(n) ? n : n.toFixed(2)}`;
 }
 
 function Eyebrow({ children }) {
