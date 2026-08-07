@@ -60,7 +60,7 @@ const PRODUCTS = [
     code: "CORE·04",
     subject: "Core package",
     title: "Core Package — 4 Sets",
-    desc: "Four full sets (eight papers in total), so your child sees the two-paper Quest format from every angle before exam day.",
+    desc: "Four full sets (eight papers in total), so your child sees the two-paper Quest format from several angles before exam day.",
     price: 25,
     originalPrice: 28,
   },
