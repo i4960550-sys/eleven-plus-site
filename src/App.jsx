@@ -63,7 +63,7 @@ const PRODUCTS = [
     code: "CORE·04",
     subject: "Core package",
     title: "Core Package — 4 Sets",
-    desc: "Four full sets (eight papers in total), so your child sees the two-paper Quest format from several angles before exam day.",
+    desc: "Four full sets (eight papers in total), so your child sees the Quest paper split from several angles before exam day.",
     price: 25,
     originalPrice: 28,
   },
@@ -899,7 +899,7 @@ export default function App() {
             padding: "64px 24px 56px",
           }}
         >
-          <Eyebrow>Written for Quest Assessments · September 2027 exam</Eyebrow>
+          <Eyebrow>Practice papers for the Quest Assessments format · September 2027 exam</Eyebrow>
           <h1
             style={{
               fontFamily: "'Source Serif 4', serif",
@@ -948,7 +948,7 @@ export default function App() {
               Buy one set, a package, or the comprehensive range
             </h2>
             <p style={{ fontSize: 14.5, color: TOKENS.inkSoft, margin: "8px 0 0", maxWidth: 520 }}>
-              Every set follows the same two-paper Quest structure: Paper 1 (English & Verbal Reasoning) and
+              Every set follows the same paper split Quest uses: Paper 1 (English & Verbal Reasoning) and
               Paper 2 (Non-Verbal Reasoning & Maths).
             </p>
           </div>
@@ -980,7 +980,7 @@ export default function App() {
             }}
           >
             {[
-              { t: "Matched to Slough's new format", d: "Written for the Quest Assessments two-paper structure the Consortium adopts for the September 2027 exam.", Icon: Target },
+              { t: "Matched to Slough's new format", d: "Matched to the paper structure Quest Assessments adopts for the September 2027 exam.", Icon: Target },
               { t: "Full mark schemes", d: "Every question is explained, so you can mark and understand mistakes together.", Icon: ClipboardCheck },
               { t: "Instant download", d: "Get your papers by email straight after checkout — no waiting for post.", Icon: Bolt },
             ].map((f) => (
@@ -1061,6 +1061,16 @@ export default function App() {
                     elevenpluscholars@gmail.com
                   </a>
                   . We reply within 2 working days.
+                </p>
+              </div>
+              <div>
+                <h4 style={{ fontFamily: "'Source Serif 4', serif", fontSize: 16.5, color: TOKENS.ink, margin: "0 0 6px" }}>
+                  Independence
+                </h4>
+                <p style={{ fontSize: 14.5, color: TOKENS.inkSoft, lineHeight: 1.65, margin: 0 }}>
+                  ElevenPlus Scholars is an independent publisher of practice material. We are not affiliated with,
+                  endorsed by, or connected to Quest Assessments, the Slough Consortium, or any exam board. Our
+                  papers are original material written to match publicly announced exam formats.
                 </p>
               </div>
             </div>
