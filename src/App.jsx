@@ -58,7 +58,7 @@ const PRODUCTS = [
     code: "SET·01",
     subject: "Single set",
     title: "Single Practice Set",
-    desc: "One full set — Paper 1 (English & Verbal Reasoning) and Paper 2 (Non-Verbal Reasoning & Maths), written to the Quest Assessments format the Slough Consortium moves to for the September 2027 exam. Choose which of the 10 sets you'd like below.",
+    desc: "One full set — Paper 1 (English & Verbal Reasoning) and Paper 2 (Non-Verbal Reasoning & Maths), written for the Quest format the Slough Consortium moves to. Choose which of the 10 sets you'd like below.",
     price: 7,
     pickSets: 10,
   },
@@ -67,7 +67,7 @@ const PRODUCTS = [
     code: "CORE·04",
     subject: "Core package",
     title: "Core Package — 4 Sets",
-    desc: "Four full sets (eight papers in total), so your child sees the Quest paper split from several angles before exam day.",
+    desc: "Four full sets — eight papers in total, at a lower price per paper than buying them one at a time.",
     price: 25,
     originalPrice: 28,
   },
@@ -78,7 +78,7 @@ const BUNDLE = {
   code: "PREM·FULL",
   subject: "Premium",
   title: "Premium — Full Set",
-  desc: "All 10 sets we publish, covering a comprehensive range of question types set for the Slough Consortium's new Quest Assessments format — hard to find anywhere else prepared for this exam board.",
+  desc: "All 10 sets we publish, covering a comprehensive range of question types for the new Quest format — hard to find anywhere else prepared for this exam board.",
   price: 65,
   originalPrice: 70,
 };
@@ -768,6 +768,7 @@ export default function App() {
   const shopRef = useRef(null);
   const faqRef = useRef(null);
   const policiesRef = useRef(null);
+  const contactRef = useRef(null);
 
   const addToCart = (product) => {
     setCart((prev) => {
@@ -795,6 +796,7 @@ export default function App() {
   const scrollToShop = () => shopRef.current?.scrollIntoView({ behavior: "smooth", block: "start" });
   const scrollToFaq = () => faqRef.current?.scrollIntoView({ behavior: "smooth", block: "start" });
   const scrollToPolicies = () => policiesRef.current?.scrollIntoView({ behavior: "smooth", block: "start" });
+  const scrollToContact = () => contactRef.current?.scrollIntoView({ behavior: "smooth", block: "start" });
 
   if (orderSuccess) {
     return (
@@ -872,6 +874,12 @@ export default function App() {
               style={{ background: "none", border: "none", cursor: "pointer", fontSize: 14.5, color: TOKENS.ink, fontFamily: "'Inter', sans-serif" }}
             >
               Policies
+            </button>
+            <button
+              onClick={scrollToContact}
+              style={{ background: "none", border: "none", cursor: "pointer", fontSize: 14.5, color: TOKENS.ink, fontFamily: "'Inter', sans-serif" }}
+            >
+              Contact
             </button>
             <button
               onClick={() => setCartOpen(true)}
@@ -986,7 +994,7 @@ export default function App() {
             }}
           >
             {[
-              { t: "Designed around the Slough Consortium's new format", d: "Designed around the paper structure Quest Assessments adopts for the September 2027 exam.", Icon: Target },
+              { t: "Designed around the Slough Consortium's new format", d: "Designed around Quest Assessments' paper structure, which the Slough Consortium is moving to.", Icon: Target },
               { t: "Full mark schemes", d: "Every question is explained, so you can mark and understand mistakes together.", Icon: ClipboardCheck },
               { t: "Instant download", d: "Get your papers by email straight after checkout — no waiting for post.", Icon: Bolt },
             ].map((f) => (
@@ -1057,7 +1065,7 @@ export default function App() {
                   with what you receive.
                 </p>
               </div>
-              <div>
+              <div ref={contactRef} style={{ scrollMarginTop: 70 }}>
                 <h4 style={{ fontFamily: "'Source Serif 4', serif", fontSize: 16.5, color: TOKENS.ink, margin: "0 0 6px" }}>
                   Contact us
                 </h4>
