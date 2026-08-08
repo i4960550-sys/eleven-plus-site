@@ -910,10 +910,10 @@ export default function App() {
               margin: "14px 0 18px",
             }}
           >
-            Practice papers built for the exam board Slough just moved to.
+            Practice papers built for the exam board the Slough Consortium just moved to.
           </h1>
           <p style={{ fontSize: 16.5, lineHeight: 1.6, color: TOKENS.inkSoft, maxWidth: 480, margin: "0 0 28px" }}>
-            From September 2027, the Slough Consortium's 11+ moves to Quest Assessments. Papers matched to this
+            From September 2027, the Slough Consortium's 11+ moves to Quest Assessments. Papers designed around this
             new format are hard to find — each set gives your child Paper 1 (English & Verbal Reasoning) and
             Paper 2 (Non-Verbal Reasoning & Maths), with full mark schemes included.
           </p>
@@ -980,7 +980,7 @@ export default function App() {
             }}
           >
             {[
-              { t: "Matched to Slough's new format", d: "Matched to the paper structure Quest Assessments adopts for the September 2027 exam.", Icon: Target },
+              { t: "Designed around the Slough Consortium's new format", d: "Designed around the paper structure Quest Assessments adopts for the September 2027 exam.", Icon: Target },
               { t: "Full mark schemes", d: "Every question is explained, so you can mark and understand mistakes together.", Icon: ClipboardCheck },
               { t: "Instant download", d: "Get your papers by email straight after checkout — no waiting for post.", Icon: Bolt },
             ].map((f) => (
@@ -1070,7 +1070,7 @@ export default function App() {
                 <p style={{ fontSize: 14.5, color: TOKENS.inkSoft, lineHeight: 1.65, margin: 0 }}>
                   ElevenPlus Scholars is an independent publisher of practice material. We are not affiliated with,
                   endorsed by, or connected to Quest Assessments, the Slough Consortium, or any exam board. Our
-                  papers are original material written to match publicly announced exam formats.
+                  papers are original material designed around publicly announced exam formats.
                 </p>
               </div>
             </div>
