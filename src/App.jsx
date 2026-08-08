@@ -28,6 +28,9 @@ const ChevronDown = (props) => <Icon {...props}><path d="m6 9 6 6 6-6" /></Icon>
 const ArrowRight = (props) => <Icon {...props}><path d="M5 12h14M13 6l6 6-6 6" /></Icon>;
 const Lock = (props) => <Icon {...props}><rect x="5" y="10" width="14" height="11" rx="2" /><path d="M8 10V7a4 4 0 0 1 8 0v3" /></Icon>;
 const Mail = (props) => <Icon {...props}><rect x="3" y="5" width="18" height="14" rx="2" /><path d="m3 7 9 6 9-6" /></Icon>;
+const Target = (props) => <Icon {...props}><circle cx="12" cy="12" r="9" /><circle cx="12" cy="12" r="5" /><circle cx="12" cy="12" r="1" fill="currentColor" /></Icon>;
+const ClipboardCheck = (props) => <Icon {...props}><rect x="5" y="4" width="14" height="17" rx="2" /><path d="M9 3h6v3H9z" /><path d="m9 13 2 2 4-4" /></Icon>;
+const Bolt = (props) => <Icon {...props}><path d="M13 2 4 14h6l-1 8 9-12h-6l1-8Z" /></Icon>;
 
 const FONTS = `
 @import url('https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,500;0,8..60,600;0,8..60,700;1,8..60,500&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@500;600&display=swap');
@@ -100,7 +103,7 @@ function Eyebrow({ children }) {
         fontWeight: 600,
         letterSpacing: "0.14em",
         textTransform: "uppercase",
-        color: TOKENS.brass,
+        color: TOKENS.brassDark,
       }}
     >
       {children}
@@ -360,7 +363,7 @@ function CartDrawer({ open, onClose, items, onQty, onRemove, subtotal, onCheckou
                     style={{
                       fontFamily: "'IBM Plex Mono', monospace",
                       fontSize: 10.5,
-                      color: TOKENS.brass,
+                      color: TOKENS.brassDark,
                       fontWeight: 600,
                       marginBottom: 3,
                     }}
@@ -977,12 +980,13 @@ export default function App() {
             }}
           >
             {[
-              { t: "Matched to Slough's new format", d: "Written for the Quest Assessments two-paper structure the Consortium adopts for the September 2027 exam." },
-              { t: "Full mark schemes", d: "Every question is explained, so you can mark and understand mistakes together." },
-              { t: "Instant download", d: "Get your papers by email straight after checkout — no waiting for post." },
+              { t: "Matched to Slough's new format", d: "Written for the Quest Assessments two-paper structure the Consortium adopts for the September 2027 exam.", Icon: Target },
+              { t: "Full mark schemes", d: "Every question is explained, so you can mark and understand mistakes together.", Icon: ClipboardCheck },
+              { t: "Instant download", d: "Get your papers by email straight after checkout — no waiting for post.", Icon: Bolt },
             ].map((f) => (
               <div key={f.t}>
-                <h4 style={{ fontFamily: "'Source Serif 4', serif", fontSize: 17, color: TOKENS.ink, margin: "0 0 6px" }}>{f.t}</h4>
+                <f.Icon size={22} color={TOKENS.brassDark} />
+                <h4 style={{ fontFamily: "'Source Serif 4', serif", fontSize: 17, color: TOKENS.ink, margin: "10px 0 6px" }}>{f.t}</h4>
                 <p style={{ fontSize: 14, color: TOKENS.inkSoft, lineHeight: 1.6, margin: 0 }}>{f.d}</p>
               </div>
             ))}
