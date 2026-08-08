@@ -34,6 +34,10 @@ const Bolt = (props) => <Icon {...props}><path d="M13 2 4 14h6l-1 8 9-12h-6l1-8Z
 
 const FONTS = `
 @import url('https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,500;0,8..60,600;0,8..60,700;1,8..60,500&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@500;600&display=swap');
+html, body {
+  overflow-x: hidden;
+  max-width: 100%;
+}
 `;
 
 const TOKENS = {
