@@ -842,6 +842,8 @@ export default function App() {
             display: "flex",
             alignItems: "center",
             justifyContent: "space-between",
+            flexWrap: "wrap",
+            rowGap: 10,
           }}
         >
           <div style={{ display: "flex", alignItems: "baseline", gap: 6 }}>
@@ -852,7 +854,7 @@ export default function App() {
               +
             </span>
           </div>
-          <nav style={{ display: "flex", alignItems: "center", gap: 28 }}>
+          <nav style={{ display: "flex", alignItems: "center", gap: 20, flexWrap: "wrap" }}>
             <button
               onClick={scrollToShop}
               style={{ background: "none", border: "none", cursor: "pointer", fontSize: 14.5, color: TOKENS.ink, fontFamily: "'Inter', sans-serif" }}
