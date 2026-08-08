@@ -111,7 +111,7 @@ export default async function handler(req, res) {
         console.warn(`Missing download link(s) for: ${missingLinks.join(", ")}`);
       }
 
-      await resend.emails.send({
+      const { data, error } = await resend.emails.send({
         from: FROM_EMAIL,
         to: email,
         replyTo: "elevenpluscholars@gmail.com",
@@ -119,7 +119,15 @@ export default async function handler(req, res) {
         html: renderEmailHtml(orderLines),
       });
 
-      console.log(`Delivery email sent to ${email} for session ${session.id}`);
+      if (error) {
+        // The Resend SDK resolves (doesn't throw) on a failed send — it
+        // returns an `error` field instead. Treat that as a failure so it's
+        // not silently swallowed: log it and return non-2xx so Stripe retries.
+        console.error("Resend rejected the delivery email:", error);
+        return res.status(500).json({ error: "Failed to send delivery email" });
+      }
+
+      console.log(`Delivery email sent to ${email} for session ${session.id} (id: ${data?.id})`);
     } catch (err) {
       // Stripe retries the webhook on non-2xx, so a real failure here should
       // surface as an error rather than being swallowed.
