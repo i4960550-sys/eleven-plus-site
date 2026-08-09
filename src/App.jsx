@@ -58,7 +58,7 @@ const PRODUCTS = [
     code: "SET·01",
     subject: "Single set",
     title: "Single Practice Set",
-    desc: "One full set — Paper 1 (English & Verbal Reasoning) and Paper 2 (Non-Verbal Reasoning & Maths), written for the Quest format the Slough Consortium moves to. Choose which of the 10 sets you'd like below.",
+    desc: "One full set — Paper 1 (English & Verbal Reasoning) and Paper 2 (Non-Verbal Reasoning & Maths), written for the Quest-style format the Slough Consortium moves to. Choose which of the 10 sets you'd like below.",
     price: 7,
     pickSets: 10,
   },
@@ -78,7 +78,7 @@ const BUNDLE = {
   code: "PREM·FULL",
   subject: "Premium",
   title: "Premium — Full Set",
-  desc: "All 10 sets we publish, covering a comprehensive range of question types for the new Quest format — hard to find anywhere else prepared for this exam board.",
+  desc: "All 10 sets we publish, covering a comprehensive range of question types for the new Quest-style format — hard to find anywhere else prepared for this exam board.",
   price: 65,
   originalPrice: 70,
 };
@@ -913,7 +913,7 @@ export default function App() {
             padding: "64px 24px 56px",
           }}
         >
-          <Eyebrow>Practice papers for the Quest Assessments format · September 2027 exam</Eyebrow>
+          <Eyebrow>Designed around the Quest-style format · September 2027 exam</Eyebrow>
           <h1
             style={{
               fontFamily: "'Source Serif 4', serif",
@@ -924,7 +924,7 @@ export default function App() {
               margin: "14px 0 18px",
             }}
           >
-            Practice papers built for the exam board the Slough Consortium just moved to.
+            Practice papers built for the exam board the Slough Consortium moves to.
           </h1>
           <p style={{ fontSize: 16.5, lineHeight: 1.6, color: TOKENS.inkSoft, maxWidth: 480, margin: "0 0 28px" }}>
             From September 2027, the Slough Consortium's 11+ moves to Quest Assessments. Papers designed around this
@@ -962,8 +962,7 @@ export default function App() {
               Buy one set, a package, or the comprehensive range
             </h2>
             <p style={{ fontSize: 14.5, color: TOKENS.inkSoft, margin: "8px 0 0", maxWidth: 520 }}>
-              Every set follows the same paper split Quest uses: Paper 1 (English & Verbal Reasoning) and
-              Paper 2 (Non-Verbal Reasoning & Maths).
+              Every set follows the same paper split as above.
             </p>
           </div>
           <div
@@ -994,7 +993,7 @@ export default function App() {
             }}
           >
             {[
-              { t: "Designed around the Slough Consortium's new format", d: "Designed around Quest Assessments' paper structure, which the Slough Consortium is moving to.", Icon: Target },
+              { t: "Designed around the Slough Consortium's new format", d: "Designed around a Quest-style paper structure, which the Slough Consortium is moving to.", Icon: Target },
               { t: "Full mark schemes", d: "Every question is explained, so you can mark and understand mistakes together.", Icon: ClipboardCheck },
               { t: "Instant download", d: "Get your papers by email straight after checkout — no waiting for post.", Icon: Bolt },
             ].map((f) => (
