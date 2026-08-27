@@ -81,7 +81,7 @@ const PRODUCTS = [
     code: "SET·01",
     subject: "Single set",
     title: "Single Practice Set",
-    desc: "One full set — Paper 1 (English & Verbal Reasoning) and Paper 2 (Non-Verbal Reasoning & Maths), written for the Quest-style format the Slough Consortium moves to. Choose which of the 10 sets you'd like below.",
+    desc: "One full set — Paper 1 (English & Verbal Reasoning) and Paper 2 (Non-Verbal Reasoning & Maths), written in a Quest-style format. Choose which of the 10 sets you'd like below.",
     price: 7,
     pickSets: 10,
   },
