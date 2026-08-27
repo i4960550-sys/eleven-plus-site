@@ -101,7 +101,7 @@ const BUNDLE = {
   code: "PREM·FULL",
   subject: "Premium",
   title: "Premium — Full Set",
-  desc: "All 10 sets we publish, covering a comprehensive range of question types for the new Quest-style format — hard to find anywhere else prepared for this exam board.",
+  desc: "All 10 sets we publish, covering a comprehensive range of question types in the Quest-style format — material like this is hard to find anywhere else this early into the exam change.",
   price: 65,
   originalPrice: 70,
 };
@@ -1114,10 +1114,6 @@ export default function App() {
           <Reveal>
             <div style={{ display: "flex", alignItems: "center", gap: 48, flexWrap: "wrap" }}>
               <div style={{ flex: "1 1 420px", maxWidth: 560 }}>
-                <Eyebrow>
-                  Designed around the Quest-style format · September{" "}
-                  <span style={{ fontFamily: "'Inter', sans-serif" }}>2027</span> exam
-                </Eyebrow>
                 <h1
                   style={{
                     fontFamily: "'Source Serif 4', serif",
@@ -1129,7 +1125,7 @@ export default function App() {
                     margin: "16px 0 20px",
                   }}
                 >
-                  Practice papers built for the exam board the Slough Consortium moves to.
+                  Practice papers built for children sitting the Slough Consortium's new Quest Assessments 11+.
                 </h1>
                 <p style={{ fontSize: 17, lineHeight: 1.65, color: TOKENS.inkSoft, margin: "0 0 32px" }}>
                   From September 2027, the Slough Consortium's 11+ moves to Quest Assessments. Papers designed
@@ -1159,9 +1155,6 @@ export default function App() {
               <h2 style={{ fontFamily: "'Source Serif 4', serif", fontSize: 32, fontWeight: 600, color: TOKENS.ink, margin: "8px 0 0" }}>
                 Buy one set, a package, or the comprehensive range
               </h2>
-              <p style={{ fontSize: 14.5, color: TOKENS.inkSoft, margin: "8px 0 0", maxWidth: 520 }}>
-                Every set follows the same paper split as above.
-              </p>
             </div>
             <div
               style={{
@@ -1191,7 +1184,7 @@ export default function App() {
                 }}
               >
                 {[
-                  { t: "Designed around the Slough Consortium's new format", d: "Designed around a Quest-style paper structure, which the Slough Consortium is moving to.", Icon: Target },
+                  { t: "Designed around the Slough Consortium's new format", d: "Designed around a Quest-style paper structure, since the Slough Consortium is moving to Quest Assessments.", Icon: Target },
                   { t: "Full mark schemes", d: "Every question is explained, so you can mark and understand mistakes together.", Icon: ClipboardCheck },
                   { t: "Instant download", d: "Get your papers by email straight after checkout — no waiting for post.", Icon: Bolt },
                 ].map((f) => (
