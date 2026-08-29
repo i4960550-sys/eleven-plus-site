@@ -110,7 +110,7 @@ const BUNDLE = {
 const FAQS = [
   {
     q: "What format do the papers come in?",
-    a: "Every paper is a printable PDF, laid out to match real exam papers, with a separate answer booklet and full mark scheme.",
+    a: "Every paper is a printable PDF in exam-style format, with a separate answer booklet and full mark scheme.",
   },
   {
     q: "How quickly will I get access?",
