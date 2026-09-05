@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://elevenpluscholars.co.uk/sitemap.xml
