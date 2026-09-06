@@ -49,7 +49,7 @@ const TOKENS = {
 };
 
 const FONTS = `
-@import url('https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,500;0,8..60,600;0,8..60,700;1,8..60,500&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,500;0,8..60,600;0,8..60,700;1,8..60,500&family=Inter:wght@400;500;600;700&display=swap');
 html, body {
   overflow-x: hidden;
   max-width: 100%;
@@ -126,7 +126,7 @@ function Eyebrow({ children }) {
   return (
     <div
       style={{
-        fontFamily: "'IBM Plex Mono', monospace",
+        fontFamily: "'Inter', sans-serif",
         fontSize: 12,
         fontWeight: 600,
         letterSpacing: "0.14em",
@@ -170,7 +170,7 @@ function PaperStack() {
         >
           <div
             style={{
-              fontFamily: "'IBM Plex Mono', monospace",
+              fontFamily: "'Inter', sans-serif",
               fontSize: 10,
               fontWeight: 600,
               letterSpacing: "0.1em",
@@ -341,7 +341,7 @@ function PaperCard({ product, onAdd, featured }) {
             left: 24,
             background: TOKENS.logoYellow,
             color: TOKENS.ink,
-            fontFamily: "'IBM Plex Mono', monospace",
+            fontFamily: "'Inter', sans-serif",
             fontSize: 11,
             fontWeight: 600,
             letterSpacing: "0.08em",
@@ -357,7 +357,7 @@ function PaperCard({ product, onAdd, featured }) {
         <Eyebrow>{product.code}</Eyebrow>
         <div
           style={{
-            fontFamily: "'IBM Plex Mono', monospace",
+            fontFamily: "'Inter', sans-serif",
             fontSize: 11,
             color: TOKENS.inkSoft,
             border: `1px solid ${TOKENS.line}`,
@@ -395,7 +395,7 @@ function PaperCard({ product, onAdd, featured }) {
           {product.originalPrice && (
             <span
               style={{
-                fontFamily: "'IBM Plex Mono', monospace",
+                fontFamily: "'Inter', sans-serif",
                 fontSize: 13,
                 color: TOKENS.inkSoft,
                 textDecoration: "line-through",
@@ -407,7 +407,7 @@ function PaperCard({ product, onAdd, featured }) {
           )}
           <span
             style={{
-              fontFamily: "'IBM Plex Mono', monospace",
+              fontFamily: "'Inter', sans-serif",
               fontSize: 19,
               fontWeight: 600,
               color: TOKENS.ink,
@@ -553,7 +553,7 @@ function CartDrawer({ open, onClose, items, onQty, onRemove, subtotal, onCheckou
                 <div style={{ flex: 1 }}>
                   <div
                     style={{
-                      fontFamily: "'IBM Plex Mono', monospace",
+                      fontFamily: "'Inter', sans-serif",
                       fontSize: 10.5,
                       color: TOKENS.brassDark,
                       fontWeight: 600,
@@ -617,7 +617,7 @@ function CartDrawer({ open, onClose, items, onQty, onRemove, subtotal, onCheckou
                 </div>
                 <div
                   style={{
-                    fontFamily: "'IBM Plex Mono', monospace",
+                    fontFamily: "'Inter', sans-serif",
                     fontSize: 14,
                     color: TOKENS.ink,
                     whiteSpace: "nowrap",
@@ -633,7 +633,7 @@ function CartDrawer({ open, onClose, items, onQty, onRemove, subtotal, onCheckou
         <div style={{ padding: "18px 22px", borderTop: `1px solid ${TOKENS.line}` }}>
           <div style={{ display: "flex", justifyContent: "space-between", marginBottom: 14, fontSize: 15 }}>
             <span style={{ color: TOKENS.inkSoft }}>Subtotal</span>
-            <span style={{ fontFamily: "'IBM Plex Mono', monospace", fontWeight: 600, color: TOKENS.ink }}>
+            <span style={{ fontFamily: "'Inter', sans-serif", fontWeight: 600, color: TOKENS.ink }}>
               {money(subtotal)}
             </span>
           </div>
@@ -713,7 +713,7 @@ function OrderSummary({ items, subtotal }) {
           <span>
             {it.title} {it.qty > 1 ? `× ${it.qty}` : ""}
           </span>
-          <span style={{ fontFamily: "'IBM Plex Mono', monospace" }}>{money(it.price * it.qty)}</span>
+          <span style={{ fontFamily: "'Inter', sans-serif" }}>{money(it.price * it.qty)}</span>
         </div>
       ))}
       <div
@@ -729,7 +729,7 @@ function OrderSummary({ items, subtotal }) {
         }}
       >
         <span>Total</span>
-        <span style={{ fontFamily: "'IBM Plex Mono', monospace" }}>{money(subtotal)}</span>
+        <span style={{ fontFamily: "'Inter', sans-serif" }}>{money(subtotal)}</span>
       </div>
     </div>
   );
@@ -1395,7 +1395,7 @@ export default function App() {
                 width: 22,
                 height: 22,
                 fontSize: 12,
-                fontFamily: "'IBM Plex Mono', monospace",
+                fontFamily: "'Inter', sans-serif",
               }}
             >
               {count}
