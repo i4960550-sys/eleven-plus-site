@@ -1064,6 +1064,12 @@ export default function App() {
             />
           </div>
           <nav style={{ display: "flex", alignItems: "center", gap: 20, flexWrap: "wrap" }}>
+            <a
+              href="/slough-consortium-11-plus/"
+              style={{ fontSize: 14.5, color: TOKENS.ink, fontFamily: "'Inter', sans-serif", textDecoration: "none" }}
+            >
+              The 2027 change
+            </a>
             <button
               onClick={scrollToFaq}
               style={{ background: "none", border: "none", cursor: "pointer", fontSize: 14.5, color: TOKENS.ink, fontFamily: "'Inter', sans-serif" }}
