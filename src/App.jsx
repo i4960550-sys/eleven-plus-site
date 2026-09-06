@@ -102,7 +102,7 @@ const BUNDLE = {
   code: "PREM·FULL",
   subject: "Premium",
   title: "Premium — Full Set",
-  desc: "All 10 sets we publish, covering a comprehensive range of question types in the Quest-style format — material like this is hard to find anywhere else this early into the exam change.",
+  desc: "All 10 sets we publish — twenty papers in total, at a lower price per paper than buying them one at a time — covering a comprehensive range of question types in the Quest-style format. Material like this is hard to find anywhere else this early into the exam change.",
   price: 65,
   originalPrice: 70,
 };
