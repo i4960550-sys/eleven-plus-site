@@ -1127,11 +1127,12 @@ export default function App() {
                   style={{
                     fontFamily: "'Source Serif 4', serif",
                     fontWeight: 600,
-                    fontSize: "clamp(34px, 4.6vw, 54px)",
-                    lineHeight: 1.08,
+                    fontSize: "clamp(29px, 4.6vw, 54px)",
+                    lineHeight: 1.1,
                     letterSpacing: "-0.01em",
                     color: TOKENS.ink,
                     margin: "0 0 20px",
+                    textWrap: "balance",
                   }}
                 >
                   Practice papers built for children sitting the Slough Consortium's new Quest Assessments 11+
