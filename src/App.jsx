@@ -395,7 +395,7 @@ function PaperCard({ product, onAdd, featured }) {
           {product.originalPrice && (
             <span
               style={{
-                fontFamily: "'Inter', sans-serif",
+                fontFamily: "'Source Serif 4', serif",
                 fontSize: 13,
                 color: TOKENS.inkSoft,
                 textDecoration: "line-through",
@@ -407,7 +407,7 @@ function PaperCard({ product, onAdd, featured }) {
           )}
           <span
             style={{
-              fontFamily: "'Inter', sans-serif",
+              fontFamily: "'Source Serif 4', serif",
               fontSize: 19,
               fontWeight: 600,
               color: TOKENS.ink,
@@ -617,7 +617,7 @@ function CartDrawer({ open, onClose, items, onQty, onRemove, subtotal, onCheckou
                 </div>
                 <div
                   style={{
-                    fontFamily: "'Inter', sans-serif",
+                    fontFamily: "'Source Serif 4', serif",
                     fontSize: 14,
                     color: TOKENS.ink,
                     whiteSpace: "nowrap",
@@ -633,7 +633,7 @@ function CartDrawer({ open, onClose, items, onQty, onRemove, subtotal, onCheckou
         <div style={{ padding: "18px 22px", borderTop: `1px solid ${TOKENS.line}` }}>
           <div style={{ display: "flex", justifyContent: "space-between", marginBottom: 14, fontSize: 15 }}>
             <span style={{ color: TOKENS.inkSoft }}>Subtotal</span>
-            <span style={{ fontFamily: "'Inter', sans-serif", fontWeight: 600, color: TOKENS.ink }}>
+            <span style={{ fontFamily: "'Source Serif 4', serif", fontWeight: 600, color: TOKENS.ink }}>
               {money(subtotal)}
             </span>
           </div>
@@ -713,7 +713,7 @@ function OrderSummary({ items, subtotal }) {
           <span>
             {it.title} {it.qty > 1 ? `× ${it.qty}` : ""}
           </span>
-          <span style={{ fontFamily: "'Inter', sans-serif" }}>{money(it.price * it.qty)}</span>
+          <span style={{ fontFamily: "'Source Serif 4', serif" }}>{money(it.price * it.qty)}</span>
         </div>
       ))}
       <div
@@ -729,7 +729,7 @@ function OrderSummary({ items, subtotal }) {
         }}
       >
         <span>Total</span>
-        <span style={{ fontFamily: "'Inter', sans-serif" }}>{money(subtotal)}</span>
+        <span style={{ fontFamily: "'Source Serif 4', serif" }}>{money(subtotal)}</span>
       </div>
     </div>
   );
@@ -1134,7 +1134,7 @@ export default function App() {
                     margin: "0 0 20px",
                   }}
                 >
-                  Practice papers built for children sitting the Slough Consortium's new Quest Assessments 11+.
+                  Practice papers built for children sitting the Slough Consortium's new Quest Assessments 11+
                 </h1>
                 <p style={{ fontSize: 17, lineHeight: 1.65, color: TOKENS.inkSoft, margin: "0 0 32px" }}>
                   From September 2027, the Slough Consortium's 11+ moves to Quest Assessments. Papers designed
