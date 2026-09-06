@@ -1117,7 +1117,7 @@ export default function App() {
           style={{
             maxWidth: 1080,
             margin: "0 auto",
-            padding: "56px 24px 64px",
+            padding: "clamp(26px, 5.5vw, 56px) 24px 64px",
           }}
         >
           <Reveal>
