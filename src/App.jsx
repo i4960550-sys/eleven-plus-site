@@ -91,7 +91,7 @@ const PRODUCTS = [
     code: "CORE·04",
     subject: "Core package",
     title: "Core Package — 4 Sets",
-    desc: "Four full sets — eight papers in total, at a lower price per paper than buying them one at a time.",
+    desc: "Sets 1–4 — eight papers in total, at a lower price per paper than buying them one at a time.",
     price: 25,
     originalPrice: 28,
   },
