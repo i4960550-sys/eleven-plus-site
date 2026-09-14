@@ -1157,6 +1157,45 @@ export default function App() {
           </Reveal>
         </section>
 
+        {/* Consortium schools */}
+        <section id="schools" style={{ maxWidth: 680, margin: "0 auto", padding: "0 24px 44px", scrollMarginTop: 70 }}>
+          <Reveal>
+            <Eyebrow>Who it's for</Eyebrow>
+            <h2 style={{ fontFamily: "'Source Serif 4', serif", fontSize: 26, fontWeight: 600, color: TOKENS.ink, margin: "8px 0 12px" }}>
+              The four schools the Slough Consortium covers
+            </h2>
+            <p style={{ fontSize: 15, color: TOKENS.inkSoft, lineHeight: 1.65, margin: "0 0 20px" }}>
+              These four grammar schools share a single 11+ entrance examination. Your child sits one test, however
+              many of the four you apply to.
+            </p>
+            <ul style={{ listStyle: "none", padding: 0, margin: "0 0 16px", borderTop: `1px solid ${TOKENS.line}` }}>
+              {[
+                "Herschel Grammar School",
+                "Langley Grammar School",
+                "St Bernard's Catholic Grammar School",
+                "Upton Court Grammar School",
+              ].map((s) => (
+                <li
+                  key={s}
+                  style={{
+                    fontFamily: "'Source Serif 4', serif",
+                    fontSize: 17,
+                    color: TOKENS.ink,
+                    padding: "13px 0",
+                    borderBottom: `1px solid ${TOKENS.line}`,
+                  }}
+                >
+                  {s}
+                </li>
+              ))}
+            </ul>
+            <p style={{ fontSize: 13.5, color: TOKENS.inkSoft, lineHeight: 1.6, margin: 0 }}>
+              Each school is its own admissions authority and sets its own entry criteria — check the school's website
+              before applying.
+            </p>
+          </Reveal>
+        </section>
+
         {/* Shop */}
         <section ref={shopRef} style={{ maxWidth: 1080, margin: "0 auto", padding: "24px 24px 72px", scrollMarginTop: 70 }}>
           <Reveal>
