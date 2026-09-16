@@ -1262,6 +1262,20 @@ export default function App() {
           </div>
         </section>
 
+        {/* About */}
+        <section id="about" style={{ maxWidth: 680, margin: "0 auto", padding: "64px 24px 0", scrollMarginTop: 70 }}>
+          <Reveal>
+            <Eyebrow>About us</Eyebrow>
+            <h2 style={{ fontFamily: "'Source Serif 4', serif", fontSize: 26, fontWeight: 600, color: TOKENS.ink, margin: "8px 0 14px" }}>
+              Who writes these papers
+            </h2>
+            <p style={{ fontSize: 15.5, color: TOKENS.inkSoft, lineHeight: 1.7, margin: 0 }}>
+              ElevenPlus Scholars is run by an experienced 11+ tutor who passed the exam themselves and completed
+              their secondary education at a grammar school.
+            </p>
+          </Reveal>
+        </section>
+
         {/* FAQ */}
         <section id="faq" ref={faqRef} style={{ maxWidth: 680, margin: "0 auto", padding: "64px 24px", scrollMarginTop: 70 }}>
           <Reveal>
