@@ -1048,20 +1048,19 @@ export default function App() {
             rowGap: 10,
           }}
         >
-          <div
-            style={{
-              display: "inline-flex",
-              alignItems: "center",
-              background: TOKENS.logoYellow,
-              borderRadius: 10,
-              padding: "7px 12px",
-            }}
-          >
-            <img
-              src={LOGO_SRC}
-              alt="ElevenPlus Scholars"
-              style={{ display: "block", height: 32, width: "auto" }}
-            />
+          <div style={{ display: "flex", alignItems: "center", gap: 11 }}>
+            <div
+              style={{
+                display: "inline-flex",
+                alignItems: "center",
+                background: TOKENS.logoYellow,
+                borderRadius: 10,
+                padding: "7px 12px",
+              }}
+            >
+              <img src={LOGO_SRC} alt="" style={{ display: "block", height: 32, width: "auto" }} />
+            </div>
+            <span style={{ fontSize: 14, fontWeight: 500, color: TOKENS.ink }}>ElevenPlus Scholars</span>
           </div>
           <nav style={{ display: "flex", alignItems: "center", gap: 20, flexWrap: "wrap" }}>
             <a
