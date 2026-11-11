@@ -15,11 +15,14 @@ export default function Maintenance() {
       }}
     >
       <h1 style={{ fontSize: "28px", marginBottom: "12px" }}>
-        ElevenPlus Scholars is briefly offline
+        ElevenPlus Scholars is currently offline
       </h1>
-      <p style={{ maxWidth: "460px", lineHeight: 1.6 }}>
-        We are making some updates and will be back shortly. If you have
-        already bought a paper and need your files, email{" "}
+      <p style={{ maxWidth: "460px", lineHeight: 1.6, margin: "0 0 12px" }}>
+        Our website is currently unavailable.
+      </p>
+      <p style={{ maxWidth: "460px", lineHeight: 1.6, margin: 0 }}>
+        If you have previously purchased a practice paper and need access to
+        your files, please email{" "}
         <a href="mailto:elevenpluscholars@gmail.com">
           elevenpluscholars@gmail.com
         </a>
